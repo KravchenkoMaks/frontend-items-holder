@@ -1,0 +1,124 @@
+:root {
+  --main__white-color: #ffffff;
+  --main__blue-color: #2b4074;
+  --font__roboto: 'Roboto Condensed', sans-serif;
+
+  --arrow__btn-side-size-max: calc(0.06 * 1340px);
+
+  --header__height-100: 100px;
+  --header__height-max: 10vh;
+  /* 640 */
+  --intro__height-X-Small: calc(0.6 * (100vh - 100px));
+  --promo__height-X-Small: calc(0.4 * (100vh - 100px));
+  /* 768 */
+  --intro__height-Small: calc(0.7 * (100vh - 100px));
+  --promo__height-Small: calc(0.3 * (100vh - 100px));
+  /* 1024                         */
+  --intro__height-Medium: calc(0.8 * (100vh - 100px));
+  --promo__height-Medium: calc(0.2 * (100vh - 100px));
+  /* 1440  */
+  --intro__height-Large: calc(0.78 * 90vh);
+  --promo__height-Large: calc(0.22 * 90vh);
+}
+
+/* X-Small [576, 767]*/
+@media (min-width: 576px) {
+  .header {
+    height: var(--header__height-100);
+  }
+  .footer {
+    height: var(--promo__height-X-Small);
+  }
+  .intro__content {
+    height: var(--intro__height-X-Small);
+    justify-content: space-around;
+  }
+  .intro__btn > .btn {
+    display: flex;
+    font-size: 2rem;
+    width: 16rem;
+    height: 3.6rem;
+    border-radius: 0.4rem;
+  }
+  .intro__btn-block {
+    gap: 2rem;
+  }
+  .intro__text-title {
+    font-size: 6rem;
+  }
+  .intro__swipe-arrows {
+    display: flex;
+  }
+}
+
+/* Small [768, 991]*/
+@media (min-width: 768px) {
+  .header {
+    height: var(--header__height-100);
+  }
+  .footer {
+    height: var(--promo__height-Small);
+  }
+  .intro__content {
+    height: var(--intro__height-Small);
+  }
+  .line {
+    display: none;
+  }
+  .intro__text-info {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .intro__text {
+    gap: 1.5rem;
+  }
+}
+
+/* Medium [992, 1199] */
+@media (min-width: 992px) {
+  .header {
+    height: var(--header__height-100);
+  }
+  .footer {
+    height: var(--promo__height-Medium);
+  }
+  .intro__content {
+    height: var(--intro__height-Medium);
+  }
+  .line {
+    display: none;
+  }
+   .intro__text-title {
+    font-size: 8rem;
+  }
+  .intro__text-info {
+  font-size: 2.4rem;
+  }
+}
+
+/* Large [1200, ...]*/
+@media (min-width: 1200px) {
+  .header {
+    height: var(--header__height-max);
+  }
+  .footer {
+    height: var(--promo__height-Medium);
+  }
+  .intro__content {
+    height: var(--intro__height-Medium);
+  }
+    .intro__text-title {
+    font-size: 10rem;
+    font-weight: 400;
+  }
+    .intro__btn > .btn {
+    width: 20rem;
+    height: 5rem;
+  }
+  .dot {
+  width: 1.6rem;
+  height: 1.6rem;
+  }
+
+}
