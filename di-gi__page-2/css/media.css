@@ -125,11 +125,15 @@
     flex-direction: row;
   }
   .services__text-block {
-    background-color: blue;
     height: var(--services__l-text-H);
     width: var(--services__l-text-W);
     max-height: var(--services__MAX-text-H);
-    gap: 3rem;
+    gap: 6rem;
+    padding-bottom: 4.5rem;
+  }
+  .services__title {
+    justify-content: unset;
+    padding-left: 3rem;
   }
   .cell {
     height: var(--cell__l-H);
@@ -148,9 +152,5 @@
   }
   .br_l {
     display: block;
-  }
-  .services__title {
-    justify-content: unset;
-    padding-left: 3rem;
   }
 }
