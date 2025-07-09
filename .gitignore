@@ -1,0 +1,13 @@
+.vscode.DS_Store
+Thumbs.db
+
+node_modules/
+dist/
+build/
+
+.idea
+.vscode/
+
+*.log
+*.tmp
+*.bak
