@@ -15,6 +15,7 @@
   --services__l-text-H: calc(2.4 * 16vw);
   --services__l-text-W: 50vw;
   --services__MAX-text-H: calc(2.4 * 0.16 * var(--container_width-max));
+  --services__MAX-cell-H: calc(0.5 * var(--services__MAX-text-H));
 }
 
 /* X-Small [576, 767]*/
@@ -137,6 +138,7 @@
   }
   .cell {
     height: var(--cell__l-H);
+    max-height: var(--services__MAX-cell-H);
   }
   .cell:nth-child(4n + 1) {
     border-left: 1px solid var(--grid__line-color);
