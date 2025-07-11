@@ -1,13 +1,20 @@
-
 /* X-Small [576, 767]*/
 @media (min-width: 576px) {
-
+  :root {
+    --portfolio__content__padding: 9.53vw;
+    --portfolio__content__padding-bottom: 6.25vw;
+    --portfolio__title-height: 25.16vw;
+    --portfolio__pictures-item-height: 81.5vw;
+    --portfolio__pictures-img-height: 72vw;
+  }
+  .portfolio__icons-container {
+    height: calc(0.86 * var(--portfolio__pictures-img-height));
+  }
 }
 
 /* -------------------------------------- */
 /* Small [768, 991]*/
 @media (min-width: 768px) {
-
 }
 
 /* -------------------------------------- */
@@ -18,5 +25,4 @@
 /* -------------------------------------- */
 /* Large [1200, ...]*/
 @media (min-width: 1200px) {
-
 }
