@@ -1,0 +1,100 @@
+:root {
+  --main__blue-color: #2b4074;
+  --main__blue-gradient: linear-gradient(to bottom, rgba(43, 64, 116, 1), rgba(43, 64, 116, 0));
+  --main__white-color: #ffffff;
+  --font-roboto: 'Roboto Condensed', sans-serif;
+
+  --container_width-max: 1440px;
+  --portfolio__content__padding: 6.25vw;
+  --portfolio__content__padding-bottom: 12.5vw;
+  --portfolio__title-height: 37.8vw;
+
+  /* --portfolio__pictures-height: 382.2vw; */
+  --portfolio__pictures-item-height: 95.55vw;
+  --portfolio__pictures-img-height: 78.125vw;
+}
+
+html {
+  font-size: 12px;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.line {
+  width: 10rem;
+  height: 0.6rem;
+  background-color: var(--main__blue-color);
+  border: none;
+}
+.container {
+  width: 100%;
+  max-width: var(--container_width-max);
+}
+/* container-center */
+.portfolio {
+  display: flex;
+  justify-content: center;
+
+  background: var(--main__blue-gradient);
+}
+.portfolio__content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  padding-left: var(--portfolio__content__padding);
+  padding-right: var(--portfolio__content__padding);
+  padding-bottom: var(--portfolio__content__padding-bottom);
+}
+.portfolio__title {
+  /* background-color: bisque; */
+  width: 100%;
+  height: var(--portfolio__title-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--main__white-color);
+}
+.portfolio__line {
+  background-color: var(--main__white-color);
+  width: 5rem;
+}
+.portfolio__pictures {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* background-color: antiquewhite; */
+}
+.portfolio__pictures-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* gap:  */
+  width: 100%;
+  height: var(--portfolio__pictures-item-height);
+  color: rgba(43, 64, 116, 7);
+}
+.portfolio__pictures-item img {
+  width: 100%;
+  height: var(--portfolio__pictures-img-height);
+}
+.portfolio__pictures-item-name {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
