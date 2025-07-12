@@ -10,16 +10,61 @@
   .portfolio__icons-container {
     height: calc(0.86 * var(--portfolio__pictures-img-height));
   }
+  .portfolio__title {
+    justify-content: center;
+    font-size: 3rem;
+    gap: 1rem;
+  }
 }
 
 /* -------------------------------------- */
 /* Small [768, 991]*/
 @media (min-width: 768px) {
+  :root {
+    --portfolio__content__padding: 6.6vw;
+    --portfolio__content__padding-bottom: 6.6vw;
+    --portfolio__title-height: 31.77vw;
+    --portfolio__pictures-item-height: 48vw;
+    --portfolio__pictures-img-height: 36.81vw;
+  }
+  .portfolio__pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+  .portfolio__icons-container {
+    gap: 30px;
+  }
+  .portfolio__title {
+    font-size: 4rem;
+  }
+  .portfolio__pictures-item-name {
+    font-size: 1;
+  }
+
+  .portfolio__line {
+    width: 8rem;
+    height: 0.8rem;
+  }
+  .portfolio__pictures-item-name {
+    font-size: 2rem;
+  }
 }
 
 /* -------------------------------------- */
 /* Medium [992, 1199] */
 @media (min-width: 992px) {
+  :root {
+    --portfolio__content__padding: 17.7vw;
+    --portfolio__content__padding-bottom: 2vw;
+    --portfolio__title-height: 27.63vw;
+    --portfolio__pictures-item-height: 35.6vw;
+    --portfolio__pictures-img-height: 27.63vw;
+  }
+  .portfolio__title {
+    gap: 2rem;
+    font-size: 4rem;
+  }
 }
 
 /* -------------------------------------- */

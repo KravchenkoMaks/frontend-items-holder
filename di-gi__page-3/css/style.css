@@ -99,7 +99,6 @@ html {
 }
 .portfolio__icons-container {
   position: absolute;
-
   top: 5%;
   width: 90%;
   height: calc(0.84 * var(--portfolio__pictures-img-height));
@@ -118,7 +117,7 @@ html {
 .portfolio__icons {
   display: flex;
   align-items: center;
-  width: 70px;
-  gap: 12px;
+  width: calc(0.4*var(--portfolio__pictures-img-height));
+  gap: calc(0.04*var(--portfolio__pictures-img-height));
 }
 
