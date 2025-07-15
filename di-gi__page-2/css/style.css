@@ -68,7 +68,7 @@ html {
 }
 
 .services__grid {
-  width: 100%;
+  
   /* height: 100%; */
   display: grid;
 }
@@ -163,3 +163,4 @@ html {
 [class^='services__item-']:hover {
   border: 5px solid var(--main__blue-color);
 }
+
