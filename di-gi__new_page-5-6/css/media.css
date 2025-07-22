@@ -76,6 +76,16 @@
   .news__header {
     font-size: 36px;
   }
+  /* testimonial */
+  #xs-br {
+    display: none;
+  }
+  .testimonial__text {
+    padding-top: 50px;
+  }
+  .testimonial-author {
+    letter-spacing: 2px;
+  }
 }
 
 /* -------------------------------------- */
@@ -128,6 +138,18 @@
     grid-column: 3;
     grid-row: 421 / span 348;
   }
+  /* testimonial */
+   .testimonial__container {
+    height: 480px;
+    gap: 0px;
+    justify-content:space-evenly ;
+  }
+  .testimonial__text {
+    padding-top: 0;
+  }
+  .testimonial-slider {
+    padding-top: 20px;
+  }
 }
 
 /* -------------------------------------- */
@@ -171,5 +193,11 @@
   .news-8 {
     grid-column: 4;
     grid-row: 258 / span 476;
+  }
+    .testimonial__text {
+    font-size: 36px;
+  }
+    .testimonial-slider {
+    padding-top: 0px;
   }
 }

@@ -82,14 +82,12 @@ hr {
   min-width: 100px;
   object-fit: cover;
   border-radius: 4px;
-  /* border: solid #2b4074; */
 }
 .news__icon-info {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* opacity: 0; */
 }
 .news__border {
   position: absolute;
@@ -121,7 +119,7 @@ hr {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 270px;
+  max-width: 270px;
 }
 
 .news:hover .news__border {
@@ -161,8 +159,7 @@ hr {
   justify-content: space-around;
 }
 .testimonial-author{
-  font-weight: 700;
- 
+  font-weight: 700; 
 }
 .testimonial-quote span{
   font-weight: 700;
