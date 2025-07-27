@@ -1,0 +1,118 @@
+:root {
+  --main__blue-color: #2b4074;
+  --main__gray-color: #4a4a4a;
+  --green-gray-color: #476e4d;
+  --main__blue-gradient: linear-gradient(to bottom, rgba(43, 64, 116, 1), rgba(43, 64, 116, 0));
+  --main__white-color: #ffffff;
+
+  --container_width_max: 1440px;
+  --header_height: 80px;
+  --header_height_max: 100px;
+  --arrow__btn-side-size: calc(0.06 * (100vh - 100px));
+
+  --services-item-width: 87vw;
+  --services-item-height: calc(1.12 * var(--services-item-width));
+  --grid__line-color: rgba(128, 128, 128, 0.6);
+
+  --portfolio__picture-height: 78.125vw;
+  --portfolio__picture-width: 87.5vw;
+  --portfolio__title-height: 37.5vw;
+}
+
+html {
+  font-size: 12px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--main__white-color);
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+hr {
+  width: 5rem;
+  height: 0.66rem;
+  background-color: var(--green-gray-color);
+  border: none;
+  margin: 0;
+}
+/* FOOTER  */
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0 20px 0;
+  max-width: 1440px;
+  height: 356.5vw;
+  margin: 0 auto;
+}
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 298.125vw;
+  background-color: var(--main__blue-color);
+}
+.footer__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 2; */
+}
+.footer__logo img {
+  width: 230px;
+  height: 60px;
+  background-color: var(--main__blue-color);
+  border-radius: 3px;
+}
+.footer__bl-i1{
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 400;                     
+  letter-spacing: 2px;
+}
+.footer__bl {
+  display: flex;
+  flex-direction: column;
+}
+.footer__bl h3{
+    font-size: 18px;
+  font-weight: 700px;
+  letter-spacing: 2px;
+}
+.footer__bl p {
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer__bl-i2 {
+  display: grid;
+  justify-items: center;
+  row-gap: 15px;
+}
+.footer__bl-i2 img {
+  height: 24px;
+}
+
+.footer__bl-i3,
+.footer__bl-i4,
+.footer__bl-i5,
+.footer__bl-i6 {
+  gap: 24px;
+}
+
+.link {
+  display: grid;
+  justify-items: center;
+  row-gap: 20px;
+  color: var(--green-gray-color);
+  font-size: 16px;
+  letter-spacing: 2px;
+}

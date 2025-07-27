@@ -1,0 +1,111 @@
+:root {
+  --main__blue-color: #2b4074;
+  --green-gray-color: #476e4d;
+  --main__blue-gradient: linear-gradient(to bottom, rgba(43, 64, 116, 1), rgba(43, 64, 116, 0));
+  --main__white-color: #ffffff;
+
+  --container_width_max: 1440px;
+  --header_height: 80px;
+  --header_height_max: 100px;
+  --arrow__btn-side-size: calc(0.06 * (100vh - 100px));
+
+  --services-item-width: 87vw;
+  --services-item-height: calc(1.12 * var(--services-item-width));
+  --grid__line-color: rgba(128, 128, 128, 0.6);
+
+  --portfolio__picture-height: 78.125vw;
+  --portfolio__picture-width: 87.5vw;
+  --portfolio__title-height: 37.5vw;
+}
+
+html {
+  font-size: 12px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--main__white-color);
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+hr {
+  width: 5rem;
+  height: 0.66rem;
+  background-color: var(--green-gray-color);
+  border: none;
+  margin: 0;
+}
+/* FOOTER  */
+.footer-container {
+  height: 1140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16%;
+  
+}
+.footer {
+  position: relative;
+  width: 100%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 30px ;
+
+  background-color: var(--main__blue-color);
+  /* display: flex; */
+}
+.footer__main-logo {
+  width: 230px;
+  height: 60px;
+  background-color: var(--main__blue-color);
+  position: absolute;
+  transform: translateY(-50%);
+  border-radius: 3px;
+  z-index: 2;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: #4a4a4a; 
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 24px;
+}
+.footer__social{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* width: 100%; */
+}
+.footer__social > img{
+  height: 20px;
+}
+.footer p{
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__info h3{
+font-size: 18px;
+font-weight: 700px;
+letter-spacing: 2px;
+}
+.footer__info p{
+font-size: 16px;
+letter-spacing: 0;
+}
