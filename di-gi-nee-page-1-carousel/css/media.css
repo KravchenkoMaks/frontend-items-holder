@@ -1,0 +1,129 @@
+/* X-Small [576, 767]*/
+@media (min-width: 576px) {
+  :root {
+    --header_height: 100px;
+    --intro-height: calc(0.6 * (100vh - var(--header_height)));
+  }
+  .owl-carousel .item .intro__btn,
+  .owl-nav {
+    display: block;
+  }
+  .owl-carousel .item {
+    gap: 8px;
+  }
+  .owl-carousel .item h1 {
+    font-size: 60px;
+  }
+  .owl-dots {
+    bottom: 30px;
+  }
+  .promo {
+    flex: 2;
+  }
+  .br__xxs {
+    display: none;
+  }
+  .intro hr {
+    top: 50%;
+    transform: translateY(-100%);
+  }
+}
+
+/* -------------------------------------- */
+/* Small [768, 991]*/
+@media (min-width: 768px) {
+  :root {
+    --intro-height: calc(0.71 * (100vh - var(--header_height)));
+  }
+.owl-carousel .item p{
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .owl-carousel .item hr{
+    display: none;
+  }
+  .owl-carousel .item {
+    gap: 30px;
+  }
+  .intro__btn {
+    margin-top: 0;
+  }
+  .promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  .promo__text {
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+    padding-top: 10%;
+    gap: 2rem;
+  }
+}
+
+/* -------------------------------------- */
+/* Medium [992, 1199] */
+@media (min-width: 992px) {
+ :root {
+    --intro-height: calc(0.79 * (100vh - var(--header_height)));
+  }
+    .owl-carousel .item h1 {
+    font-size: 84px;
+    letter-spacing: 2px;
+  }
+  .owl-carousel .item p{
+    line-height: 20px;
+  }
+  .owl-carousel .item {
+  padding-bottom: 60px;
+}
+
+  .promo h1 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .promo__text {
+    justify-content: center;
+    padding: 0;
+    gap: 2rem;
+  }
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+  .intro__pagination {
+    gap: 18px;
+  }
+}
+
+/* -------------------------------------- */
+/* Large [1200, ...]*/
+@media (min-width: 1200px) {
+   :root {
+    --intro-height: 668px;
+  }
+    .owl-carousel .item h1 {
+    font-size: 96px;
+    letter-spacing: 2x;
+  }
+  .owl-carousel .item p{
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .owl-dots {
+  bottom: 30px;
+}
+.owl-dot span {
+  width: 16px;
+  height: 16px;
+  background: var(--main__white-color);
+  margin: 10px;
+}
+.owl-dot.active span {
+  border: 2px solid  var(--main__white-color);
+}
+
+}
